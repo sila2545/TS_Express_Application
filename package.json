@@ -1,0 +1,38 @@
+{
+  "name": "typescriptwithexpressapp",
+  "version": "1.0.0",
+  "description": "For Create Typescript Express",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node --inspect=5858 -r ts-node/register ./src/app.ts",
+    "dev": "nodemon",
+    "build": "tsc"
+  },
+  "nodemonConfig": {
+    "ignore": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    ".git",
+    "node_modules"
+    ],
+    "watch": [
+    "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "nodemon": "^1.19.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
